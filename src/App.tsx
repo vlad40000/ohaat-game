@@ -501,7 +501,10 @@ export default function App() {
         intent: forceIntent,
         sequence: (lastClash?.sequence ?? 0) + 1,
       })
-      }
+      setState(applyAction(result.state))
+    } catch (err) {
+      const message = err instanceof Error ? err.message : 'Unknown error'
+      setError(message)
     }
   }
 

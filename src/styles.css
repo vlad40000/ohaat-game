@@ -136,6 +136,10 @@ strong { color: #ffffff; }
 .board-panel { min-height: 640px; }
 .county-board-panel {
   overflow: hidden;
+  position: relative;
+  background-image: linear-gradient(rgba(17, 23, 34, 0.85), rgba(17, 23, 34, 0.85)), url('/swamp_county_map.png');
+  background-size: cover;
+  background-position: center;
 }
 .county-role-legend {
   margin-top: 0.85rem;
